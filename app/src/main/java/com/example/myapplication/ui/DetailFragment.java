@@ -7,9 +7,12 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.myapplication.R;
+
 import com.example.myapplication.app.NavigationBar;
 import com.example.myapplication.util.SliderAdapter;
 import com.example.myapplication.data.SliderItem;
