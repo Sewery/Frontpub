@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#693D2B"
     android:fillViewport="true"
-    android:outlineAmbientShadowColor="#000000"
     tools:context=".ui.FiltrationFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,14 +13,11 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="62dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="72dp"
-            android:fontFamily="@font/roboto_bold"
+            android:layout_width="151dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="52dp"
             android:text="Ocena"
-            android:textColor="#FFF6E3"
-            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,29 +25,24 @@
             android:id="@+id/rangeRating"
             android:layout_width="377dp"
             android:layout_height="47dp"
-            android:layout_marginTop="4dp"
-            android:forceDarkAllowed="false"
-            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:layout_marginTop="132dp"
+            android:layout_marginEnd="16dp"
             android:stepSize="0.5"
             android:valueFrom="0"
             android:valueTo="5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.352"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:thumbColor="#FFF6D3"
-            app:trackColor="#2E2D32"
+            app:layout_constraintTop_toTopOf="parent"
             app:values="@array/rangeRating" />
 
         <com.google.android.material.slider.Slider
             android:id="@+id/odleglosc"
             android:layout_width="360dp"
             android:layout_height="50dp"
-            android:layout_marginTop="64dp"
-            android:stepSize="0.5"
-            android:value="5"
+            android:layout_marginTop="44dp"
             android:valueFrom="0"
             android:valueTo="5"
+            android:stepSize="0.5"
+            android:value="5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.549"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,14 +52,12 @@
             android:id="@+id/textView3"
             android:layout_width="91dp"
             android:layout_height="43dp"
-            android:layout_marginStart="12dp"
-            android:fontFamily="@font/roboto_bold"
+            android:layout_marginStart="16dp"
             android:text="W jakiej odległości ?"
-            android:textColor="#FFF6E3"
             app:layout_constraintBottom_toTopOf="@+id/odleglosc"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rangeRating"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView4"
@@ -77,8 +65,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginTop="64dp"
-            android:fontFamily="@font/roboto_bold"
-            android:textColor="@color/black"
             android:text="Czy otwarte teraz?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/odleglosc" />
@@ -90,7 +76,6 @@
             android:layout_height="55dp"
             android:layout_marginStart="80dp"
             android:layout_marginTop="92dp"
-            android:fontFamily="@font/roboto_bold"
             android:text="Otwarte"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/odleglosc" />
@@ -101,8 +86,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/roboto_bold"
-            android:textColor="@color/black"
             android:text="Wybierz rodzaje piw, które cię interesują"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/czyotwarte" />
@@ -123,23 +106,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/AleBrowar"
-                android:visibility="gone" />
+                android:visibility="gone"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Amber"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Amber"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:text="@string/Amber" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Artezan"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Artezan"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:text="@string/Artezan" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Budweiser"
@@ -153,40 +136,39 @@
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Brokreacja"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:text="@string/Brokreacja" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Cieszyn"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Cieszyn"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:text="@string/Cieszyn" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Fortuna"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Fortuna"
-                android:visibility="gone" />
-
+                android:visibility="gone"
+                android:text="@string/Fortuna" />
             <com.google.android.material.chip.Chip
                 android:id="@+id/FunkyFluids"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/FunkyFluids"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:text="@string/FunkyFluids" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Grimbergen"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Grimbergen"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:text="@string/Grimbergen" />
 
 
             <com.google.android.material.chip.Chip
@@ -208,24 +190,24 @@
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Kingpin"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:text="@string/Kingpin" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Komes"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Komes"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:text="@string/Komes" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Komoran"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:text="@string/Komoran"
-                android:visibility="gone" />
+                android:text="@string/Komoran" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Kozel"
@@ -245,33 +227,33 @@
                 android:id="@+id/Miłosław"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:text="@string/Miłosław"
-                android:visibility="gone" />
+                android:text="@string/Miłosław" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Moczybroda"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:text="@string/Moczybroda"
-                android:visibility="gone" />
+                android:text="@string/Moczybroda" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/NaJurze"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:text="@string/NaJurze"
-                android:visibility="gone" />
+                android:text="@string/NaJurze" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Nepomucen"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:text="@string/Nepomucen"
-                android:visibility="gone" />
+                android:text="@string/Nepomucen" />
 
 
             <com.google.android.material.chip.Chip
@@ -299,25 +281,25 @@
                 android:id="@+id/Primator"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:text="@string/Primator"
-                android:visibility="gone" />
+                android:text="@string/Primator" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Raduga"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:text="@string/Raduga"
-                android:visibility="gone" />
+                android:text="@string/Raduga" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Recraft"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:text="@string/Recraft"
-                android:visibility="gone" />
+                android:text="@string/Recraft" />
 
 
             <com.google.android.material.chip.Chip
@@ -331,17 +313,17 @@
                 android:id="@+id/Zatecky"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:text="@string/Zatecky"
-                android:visibility="gone" />
+                android:text="@string/Zatecky" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Zamiastem"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
+                android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:text="@string/Zamiastem"
-                android:visibility="gone" />
+                android:text="@string/Zamiastem" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/Żywiec"
@@ -357,8 +339,7 @@
             android:layout_width="51dp"
             android:layout_height="26dp"
             android:layout_marginEnd="68dp"
-            android:fontFamily="@font/roboto_bold"
-            android:textColor="@color/black"
+
             android:clickable="true"
             android:text="@string/wiecej"
             app:layout_constraintEnd_toEndOf="parent"
@@ -370,8 +351,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="36dp"
-            android:fontFamily="@font/roboto_bold"
-            android:textColor="@color/black"
             android:text="Wybierz drinki, które cię interesują"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/BrowaryLista" />
@@ -490,8 +469,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/roboto_bold"
-            android:textColor="@color/black"
             android:text="Jaka drogo?"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/odleglosc" />
@@ -537,37 +514,6 @@
             android:text="Filtruj"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/chipGroup" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginTop="12dp"
-            android:background="#2E1A13"
-            app:cardBackgroundColor="#2E1A13"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.15"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rangeRating" />
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="338dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="4dp"
-            android:text="Filtry"
-            android:textColor="#FFF6E3"
-            android:textSize="40sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#2E1A13"
-            app:cardBackgroundColor="#2E1A13"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
